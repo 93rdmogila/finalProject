@@ -9,7 +9,6 @@ def add_student(student_dict,group_name,full_name,course,graduation_year,grades 
     student_dict[new_id] = Student(new_id,group_name,full_name,course,graduation_year,grades,gpa, tuition_status)
     print("Студент был успешно добавлен")
 
-add_student(student_dict, "Group 5", "Ержанов Аманжол Маратович", "1", "2028")
 def print_by_course(student_dict, course1):
     course1 = str(course1)
     dict_by_course = dict()
