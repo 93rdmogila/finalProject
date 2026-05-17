@@ -9,6 +9,14 @@ def add_student(student_dict,group_name,full_name,course,graduation_year,grades 
     student_dict[new_id] = Student(new_id,group_name,full_name,course,graduation_year,grades,gpa, tuition_status)
     print("Студент был успешно добавлен")
 
+def del_student(student_dict, student_id):
+    if student_id in student_dict.keys():
+        print(f"Студент {student_dict[student_id].full_name} был удален")
+        student_dict.pop(student_id)
+    else:
+        print("Студент с таким айди не найдан")
+
+
 def print_by_course(student_dict, course1):
     course1 = str(course1)
     dict_by_course = dict()
